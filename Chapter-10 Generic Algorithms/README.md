@@ -302,12 +302,12 @@ for_each(words.begin(), words.end(), bind(print, ref(os), _1, ' '));
 - `inserter`：创建一个调用`insert`操作的迭代器。此函数接受第二个参数，该参数必须是一个指向给定容器的迭代器，元素会被插入到该参数指向的元素之前。
 
 ```c++
-list<int> 1st = { 1,2,3,4 };
+list<int> lst = { 1,2,3,4 };
 list<int> lst2, lst3;   // empty lists
-// after copy completes, 1st2 contains 4 3 2 1
-copy(1st.cbegin(), lst.cend(), front_inserter(lst2));
-// after copy completes, 1st3 contains 1 2 3 4
-copy(1st.cbegin(), lst.cend(), inserter(lst3, lst3.begin()));
+// after copy completes, lst2 contains 4 3 2 1
+copy(lst.cbegin(), lst.cend(), front_inserter(lst2));
+// after copy completes, lst3 contains 1 2 3 4
+copy(lst.cbegin(), lst.cend(), inserter(lst3, lst3.begin()));
 ```
 
 ### iostream迭代器（iostream Iterators）
