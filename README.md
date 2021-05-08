@@ -52,6 +52,6 @@
 
 ## 关于
 
-***GitHub***：https://github.com/czs108/
+***GitHub***：https://github.com/czs108
 
 ***E-Mail***：chenzs108@outlook.com
